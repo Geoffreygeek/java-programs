@@ -1,0 +1,46 @@
+public class Circle {
+    private double radius = 1.0;
+    private String color = "red";
+
+    // Constructors
+    public Circle() {
+    }
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public Circle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    // Getters
+    public double getRadius() {
+        return radius;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    // Setters
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    // toString method
+    @Override
+    public String toString() {
+        return "Circle[radius=" + radius + ", color=" + color + "]";
+    }
+
+    // getArea method
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+}
